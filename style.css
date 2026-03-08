@@ -135,5 +135,35 @@ cv-wrapper, .cv-wrapper {
     padding: 25px;
   }
 }
+/* === PRINT SETTINGS === */
+@media print {
+
+  body{
+    background: white;
+    padding:0;
+  }
+
+  .cv-wrapper{
+    box-shadow:none;
+    border-radius:0;
+    max-width:100%;
+  }
+
+  .sidebar{
+    background:#2fb6a2 !important;
+    color:white !important;
+  }
+
+  .content{
+    padding:30px;
+  }
+
+}
+
+/* ukuran kertas */
+@page{
+  size:A4;
+  margin:15mm;
+}
 
 
