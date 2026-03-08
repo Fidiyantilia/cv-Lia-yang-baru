@@ -7,7 +7,7 @@ body {
   color: #333;
 }
 
-cv-wrapper, .cv-wrapper {
+.cv-wrapper {
   max-width: 1000px;
   background: #ffffff;
   margin: auto;
@@ -40,6 +40,7 @@ cv-wrapper, .cv-wrapper {
   text-align: center;
   font-size: 22px;
   font-weight: 600;
+  letter-spacing: 1px;
   margin: 5px 0 3px;
 }
 
@@ -107,6 +108,7 @@ cv-wrapper, .cv-wrapper {
 .item-title {
   font-weight: 600;
   font-size: 16px;
+  color: #222;
 }
 
 .item-sub {
@@ -131,22 +133,27 @@ cv-wrapper, .cv-wrapper {
   .cv-wrapper {
     grid-template-columns: 1fr;
   }
+
   .content {
     padding: 25px;
   }
 }
+
 /* === PRINT SETTINGS === */
 @media print {
 
   body{
-    background: white;
+    background:white;
+    margin:0;
     padding:0;
   }
 
   .cv-wrapper{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    max-width:100%;
     box-shadow:none;
     border-radius:0;
-    max-width:100%;
   }
 
   .sidebar{
@@ -158,41 +165,14 @@ cv-wrapper, .cv-wrapper {
     padding:30px;
   }
 
+  .block{
+    page-break-inside:avoid;
+  }
+
 }
 
 /* ukuran kertas */
 @page{
   size:A4;
-  margin:15mm;
+  margin:12mm;
 }
-/* === PRINT FIX === */
-@media print {
-
-  body{
-    background:white;
-    padding:0;
-  }
-
-  .cv-wrapper{
-    display:grid;
-    grid-template-columns:280px 1fr;
-    max-width:100%;
-    box-shadow:none;
-  }
-
-  .sidebar{
-    background:#2fb6a2 !important;
-    color:white;
-  }
-
-}
-
-@media print{
-  .cv-wrapper{
-    display:grid;
-    grid-template-columns:280px 1fr;
-  }
-}
-
-
-
