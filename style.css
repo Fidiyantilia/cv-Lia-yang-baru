@@ -81,11 +81,11 @@ body {
 
 /* === MAIN CONTENT === */
 .content {
-  padding: 45px 40px;
+  padding: 35px 30px;
 }
 
 .block {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .block h3 {
@@ -172,5 +172,6 @@ body {
   size:A4;
   margin:8mm;
 }
+
 
 
