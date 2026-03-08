@@ -165,5 +165,26 @@ cv-wrapper, .cv-wrapper {
   size:A4;
   margin:15mm;
 }
+/* === PRINT FIX === */
+@media print {
+
+  body{
+    background:white;
+    padding:0;
+  }
+
+  .cv-wrapper{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    max-width:100%;
+    box-shadow:none;
+  }
+
+  .sidebar{
+    background:#2fb6a2 !important;
+    color:white;
+  }
+
+}
 
 
