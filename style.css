@@ -40,7 +40,6 @@ body {
   text-align: center;
   font-size: 22px;
   font-weight: 600;
-  letter-spacing: 1px;
   margin: 5px 0 3px;
 }
 
@@ -108,7 +107,6 @@ body {
 .item-title {
   font-weight: 600;
   font-size: 16px;
-  color: #222;
 }
 
 .item-sub {
@@ -144,7 +142,6 @@ body {
 
   body{
     background:white;
-    margin:0;
     padding:0;
   }
 
@@ -166,12 +163,11 @@ body {
   }
 
   .block{
-    page-break-inside:avoid;
+    page-break-inside: avoid;
   }
 
 }
 
-/* ukuran kertas */
 @page{
   size:A4;
   margin:12mm;
